@@ -1,0 +1,839 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* font style */
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+/* header style */
+header{
+
+  
+    height: 48px;
+    background-color: black;
+   position: fixed;
+   z-index: 3;
+   width: 100%;
+
+   
+}
+
+.container{
+
+    max-width: 2500px;
+    margin: 0 auto;
+    
+}
+
+.header__flex{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    align-items: center;
+}
+
+.list_block{
+
+    margin-left: 15px;
+}
+
+.header__flex .list_block ol{
+
+    display: flex;
+    padding: 12px;
+    list-style-type: none;
+   
+}
+
+.list_block ol li{
+
+  
+   padding-right: 47px;
+  
+}
+
+.list_block ol li a{
+
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.search_block{
+
+    width: 5%;
+    text-align: center;
+}
+
+.search_block i{
+
+  
+   padding: 15px 0;
+    color: white;
+    font-size: 15px;
+}
+
+.search_block:hover{
+    background-color: rgb(184, 40, 40);
+   
+}
+
+
+
+
+.more_box{
+
+   display: none;
+    position: relative;
+    top: 164%;
+    right: 32%;
+    height: 110px;
+    width: 160px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.more_box ul{
+
+    list-style-type: none;
+    padding: 20px;
+}
+
+.more_box ul li{
+
+    color: black;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+li a.checkbox:hover .more_box{
+
+    display: block;
+}
+
+
+/* section los__angeles styles */
+
+section.los__angeles{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 500px;
+    height: 730px;
+    background-image: url(../images/chicago.jpg);
+    background-position: 100 100;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+   
+}
+
+.text_los_angeles{
+
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    padding-top: 90px;
+}
+
+.text_los_angeles h1{
+
+    font-size: 24px;
+   
+}
+
+.text_los_angeles p{
+
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.container2{
+
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+/* menu_burger */
+
+.menu_burger{
+
+    display: none;
+    width: 46px;
+    height: 46px;
+    position: relative;
+    text-align: center;
+    
+}
+
+.menu_burger span{
+
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.menu_burger span:nth-child(2){
+
+    top: 35px;
+}
+
+.menu_burger span:nth-child(3){
+
+    top: 12px;
+}
+
+
+.menu_burger_active .menu_burger span{
+
+    background-color: transparent;
+}
+
+.menu_burger_active .menu_burger span:nth-child(2){
+
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.menu_burger_active .menu_burger span:nth-child(3){
+
+   top: 0;
+   transform: rotate(-45deg);
+}
+
+/* section_band style */
+
+.container3{
+
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+section.band{
+
+    height: 600px;
+    padding-top: 50px;
+    font-family: 'Lato', sans-serif;
+}
+
+.band_text h2{
+
+    text-align: center;
+    font-size: 30px;
+}
+
+.band_text span{
+   
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(148, 146, 146);
+}
+
+.band_text p{
+
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.band_flex{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+
+.band_flex .band_box{
+
+    /* height: 153px;
+    width: 153px; */
+    text-align: center;
+}
+
+.band_box p{
+
+    margin-bottom: 18px;
+}
+
+
+
+.band_box img{
+
+    width: 100%;
+}
+
+section.dates{
+
+    margin-top: 90px;
+    height: 780px;
+    background-color: black;
+    padding-top: 50px;
+}
+
+.september{
+
+    width: 100%;
+    height: 39px;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    background-color: white;
+    
+}
+
+.dates_text{
+
+    text-align: center;
+    color: white;
+    
+}
+
+.dates_text h2{
+
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
+}
+
+.dates_text p{
+
+    font-size: 15px;
+    color: rgb(150, 150, 150);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.september span{
+
+    font-size: 15px;
+    color: rgb(150, 150, 150);
+}
+
+.september button{
+
+    width: 69px;
+    height: 22px;
+    background-color: #F44336;
+    border: none;
+    color: white;
+    font-size: 15px;
+    margin-left: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+.september span.number{
+
+    display: inline-block;
+    width: 3%;
+    height: 23px;
+    background-color: black;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 3px;
+    color: white;
+    position: relative;
+    left: 83%;
+}
+
+.tickets{
+
+    margin-top: 20px;
+}
+
+.tickets_flex{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket_box{
+
+    width: 30%;
+    height: 370px;
+    background-color: white;
+}
+
+.photo_box{
+
+    position: relative;
+    height: 183px;
+    width: 100%;
+    background-image: url(../images/newyork.jpg);
+    background-position: 100 100;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.photo_box2{
+
+    position: relative;
+    height: 183px;
+    width: 100%;
+    background-image: url(../images/paris.jpg);
+    background-position: 100 100;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.photo_box3{
+
+    position: relative;
+    height: 183px;
+    width: 100%;
+    background-image: url(../images/sanfran.jpg);
+    background-position: 100 100;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.fon{
+
+    display: none;
+    /* display: none; */
+    height: 183px;
+    width: 100%;
+    background-color: black;
+}
+
+.photo_box:hover .fon{
+
+   opacity: 0.3;
+   /* z-index: 2; */
+    position: absolute;
+    display: block;
+}
+
+.photo_box:hover{
+
+    /* z-index: -2; */
+    opacity: 1;
+}
+
+
+.photo_box2:hover .fon{
+
+    opacity: 0.3;
+    /* z-index: 2; */
+     position: absolute;
+     display: block;
+ }
+ 
+ .photo_box2:hover{
+ 
+     /* z-index: -2; */
+     opacity: 1;
+ }
+
+ .photo_box3:hover .fon{
+
+    opacity: 0.3;
+    /* z-index: 2; */
+     position: absolute;
+     display: block;
+ }
+ 
+ .photo_box3:hover{
+ 
+     /* z-index: -2; */
+     opacity: 1;
+ }
+
+.ticket_text{
+
+    padding: 15px;
+}
+
+.ticket_text h5{
+
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
+}
+
+.ticket_text span{
+
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: rgb(146, 144, 144);
+}
+
+.ticket_text p{
+
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+button.btn{
+
+    margin-top: 10px;
+    height: 38px;
+    width: 107px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+button.btn:hover{
+
+    background-color: rgb(167, 167, 167);
+    color: rgb(90, 90, 90);
+    border: none;
+}
+
+/* section.contact style */
+
+section.contact{
+
+    height: 400px;
+}
+
+.contact_text{
+
+    text-align: center;
+    margin-top: 70px;
+}
+
+.contact_text h2{
+
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 25px;
+
+}
+
+.contact_text span{
+
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(165, 165, 165);
+}
+
+.contact_flex{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.info_box p{
+
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+}
+
+.info_box i{
+
+    margin-right: 10px;
+}
+
+.form_box input{
+
+ 
+    width: 47%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+input.message{
+
+    width: 97%;
+    margin-top: 10px;
+}
+
+button.form{
+
+    width: 71px;
+    height: 38px;
+    background-color: black;
+    color: white;
+    margin-top: 14px;
+    float: right;
+    margin-right: 12px;
+    font-family: 'Lato', sans-serif;
+}
+
+button.form:hover{
+
+    background-color: rgb(184, 184, 184);
+    color: black;
+    border: none;
+}
+
+section.background{
+
+    height: 1000px;
+    background-image: url(../images/map.jpg);
+    background-position: 100 100;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+footer{
+
+    height: 200px;
+}
+
+.logo{
+
+    text-align: center;
+    margin-top: 90px;
+}
+
+.logo a{
+
+    color: gray;
+    font-size: 28px;
+}
+
+.logo a:hover{
+
+    color: rgb(190, 186, 186);
+}
+
+footer p{
+
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: gray;
+}
+
+footer p a{
+    color: gray;
+}
+
+@media screen and (max-width:735px) {
+    
+    .container3{
+
+        max-width: 600px;
+    }
+
+    .ticket_box{
+
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:612px) {
+    
+    .container3{
+
+        max-width: 550px;
+    }
+
+   
+}
+
+@media screen and (max-width:608px) {
+    
+    .container3{
+
+        max-width: 500px;
+    }
+
+   
+}
+
+@media screen and (max-width:568px) {
+    
+    .text_los_angeles{
+
+        display: none;
+    }
+
+    .list_block li:nth-child(2){
+        display: none;
+    }
+
+    .list_block li:nth-child(3){
+        display: none;
+    }
+
+    .list_block li:nth-child(4){
+        display: none;
+    }
+
+    .list_block li:nth-child(5){
+        display: none;
+    }
+
+    .search_block{
+
+        display: none;
+    }
+    
+    section.los__angeles{
+
+        height: 277px;
+        background-size: contain;
+      
+    }
+
+    header{
+
+        position: static;
+    }
+
+    .menu_burger{
+
+        display: block;
+    }
+
+    .container3{
+
+        max-width: 500px;
+        margin: 0 auto;
+    
+    }
+
+    .band_flex{
+
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+    }
+
+    section.band{
+
+        padding-top: 0;
+        margin-top: 50px;
+    }
+
+    section.los__angeles{
+
+        padding-top: 0px;
+    }
+
+
+    .band_flex .band_box{
+
+
+        margin-bottom: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+      
+    }
+
+    .band_box img{
+
+        width: 100%;
+        
+    }
+
+    section.dates{
+
+      margin-top: 780px;
+      width: 100%;
+
+    }
+
+    .band_flex{
+
+        align-items: center;
+        
+    }
+
+    .band_box{
+
+       margin-right: 10px;
+    }
+
+    .container3{
+
+        max-width: 500px;
+        margin: 0 auto;
+    
+    }
+
+    
+    .tickets_flex{
+
+        flex-direction: column;
+    }
+
+    .ticket_box{
+
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    section.contact{
+
+        margin-top: 70px;
+    }
+
+    section.dates{
+
+        height: 1670px;
+    }
+
+    .contact_flex{
+
+        flex-direction: column;
+    }
+
+    .form_box input{
+
+        display: block;
+        width: 100%;
+       
+    }
+
+    section.background{
+
+        margin-top: 90px;
+        height: 300px;
+    }
+}
+
+
+@media screen and (max-width:508px) {
+    
+   
+ .container3{
+
+    max-width: 450px;
+    margin: 0 auto;
+  
+ }
+ 
+   
+}
